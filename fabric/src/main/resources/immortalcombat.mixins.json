@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.immortalcombat.fabric.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+  ],
+  "mixins": [
+    "MixinItems"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

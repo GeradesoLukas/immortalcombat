@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "immortalcombat",
+  "version": "${version}",
+  "name": "Immortal Combat",
+  "description": "Fight go brr",
+  "authors": [
+    "GeradesoLukas, mohnbraten"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/immortalcombat/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.immortalcombat.fabric.ImmortalCombatFabric"
+    ]
+  },
+  "mixins": [
+    "immortalcombat.mixins.json",
+    "immortalcombat-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.9.83"
+  }
+}

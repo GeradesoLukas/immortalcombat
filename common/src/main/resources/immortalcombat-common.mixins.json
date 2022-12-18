@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "net.immortalcombat.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "MixinTitleScreen"
+  ],
+  "mixins": [
+    "FishingHookMixin",
+    "MixinCreeper",
+    "MixinCrossbowItem",
+    "MixinItemAccess",
+    "MixinItems",
+    "MixinMobEffect",
+    "MixinPlayer",
+    "MixinThrowablePotionItem"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
