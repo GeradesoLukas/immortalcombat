@@ -11,9 +11,13 @@
     "MixinCrossbowItem",
     "MixinItemAccess",
     "MixinItems",
+    "MixinItemStack",
+    "MixinLivingEntity",
     "MixinMobEffect",
     "MixinPlayer",
-    "MixinThrowablePotionItem"
+    "MixinThrowablePotionItem",
+    "MixinThrownPotion",
+    "MixinUnbreakingEnchantment"
   ],
   "injectors": {
     "defaultRequire": 1

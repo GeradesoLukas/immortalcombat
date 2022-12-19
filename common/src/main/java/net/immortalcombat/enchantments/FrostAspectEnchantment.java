@@ -7,6 +7,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.enchantment.FireAspectEnchantment;
 
 import java.util.Random;
 
@@ -32,4 +33,8 @@ public class FrostAspectEnchantment extends Enchantment {
         super.doPostHurt(user,target,level);
     }
 
+    @Override
+    protected boolean checkCompatibility(Enchantment enchantment) {
+        return !(enchantment instanceof FireAspectEnchantment);
+    }
 }

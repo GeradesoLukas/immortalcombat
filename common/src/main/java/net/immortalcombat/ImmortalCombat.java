@@ -23,7 +23,9 @@ public class ImmortalCombat {
     public static void init() {
         //ITEMS.register();
         loadStacking();
+
         InteractionEvent.RIGHT_CLICK_ITEM.register(RightClickEvent::register);
+
         ModEnchantments.ENCHANTMENTS.register();
 
         System.out.println(ExampleExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());

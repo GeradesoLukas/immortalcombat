@@ -19,7 +19,7 @@ import static net.minecraft.world.item.ProjectileWeaponItem.ARROW_OR_FIREWORK;
 @Mixin(CrossbowItem.class)
 public class MixinCrossbowItem {
 
-    @Inject(at = @At("HEAD"), method = "performShooting")
+    //@Inject(at = @At("HEAD"), method = "performShooting")
     private static void performShootingInject(Level level, LivingEntity livingEntity, InteractionHand interactionHand, ItemStack itemStack, float f, float g, CallbackInfo info) {
 
         if(livingEntity instanceof Player player) {
