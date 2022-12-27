@@ -27,6 +27,7 @@
     "MixinTridentItem",
     "MixinUnbreakingEnchantment"
   ],
+  "plugin": "net.immortalcombat.mixin.MixinConfigPlugin",
   "injectors": {
     "defaultRequire": 1
   }
