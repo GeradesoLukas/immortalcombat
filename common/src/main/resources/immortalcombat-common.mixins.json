@@ -6,9 +6,14 @@
     "MixinTitleScreen"
   ],
   "mixins": [
+    "AccessorAbstractArrow",
+    "AccessorEnchantment",
+    "CrossbowItemInvoker",
     "FishingHookMixin",
+    "MixinArrowPiercingEnchantment",
     "MixinCreeper",
     "MixinCrossbowItem",
+    "MixinEnchantmentHelper",
     "MixinItemAccess",
     "MixinItems",
     "MixinItemStack",
@@ -17,6 +22,9 @@
     "MixinPlayer",
     "MixinThrowablePotionItem",
     "MixinThrownPotion",
+    "MixinThrownTrident",
+    "MixinThrownTridentAccess",
+    "MixinTridentItem",
     "MixinUnbreakingEnchantment"
   ],
   "injectors": {

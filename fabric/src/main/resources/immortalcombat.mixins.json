@@ -5,6 +5,7 @@
   "client": [
   ],
   "mixins": [
+    "MixinEnchantmentCategory",
     "MixinItems"
   ],
   "injectors": {

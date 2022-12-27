@@ -1,12 +1,16 @@
 package net.immortalcombat;
 
 import dev.architectury.event.events.common.InteractionEvent;
+import net.immortalcombat.enchantments.ModEnchantmentCategories;
 import net.immortalcombat.enchantments.ModEnchantments;
 import net.immortalcombat.events.RightClickEvent;
+import net.immortalcombat.mixin.AccessorEnchantment;
 import net.immortalcombat.mixin.MixinItemAccess;
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PotionItem;
+import net.minecraft.world.item.enchantment.ArrowPiercingEnchantment;
+import net.minecraft.world.item.enchantment.Enchantment;
 
 public class ImmortalCombat {
     public static final String MODID = "immortalcombat";
@@ -23,6 +27,7 @@ public class ImmortalCombat {
     public static void init() {
         //ITEMS.register();
         loadStacking();
+        //loadCategory();
 
         InteractionEvent.RIGHT_CLICK_ITEM.register(RightClickEvent::register);
 
@@ -35,6 +40,14 @@ public class ImmortalCombat {
         for(Item item : Registry.ITEM) {
             if(item instanceof PotionItem) {
                 setMax(item,8);
+            }
+        }
+    }
+
+    public static void loadCategory() {
+        for(Enchantment enchantment : Registry.ENCHANTMENT) {
+            if(enchantment instanceof ArrowPiercingEnchantment) {
+                ((AccessorEnchantment) enchantment).setCategory(ModEnchantmentCategories.CROSSBOW_AND_TRIDENT);
             }
         }
     }

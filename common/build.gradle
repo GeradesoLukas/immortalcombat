@@ -10,7 +10,9 @@ dependencies {
     // We depend on fabric loader here to use the fabric @Environment annotations and get the mixin dependencies
     // Do NOT use other classes from fabric loader
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    minecraftLibraries(annotationProcessor(include("com.github.LlamaLad7:MixinExtras:0.1.1")))
     // Remove the next line if you don't want to depend on the API
+    //modImplementation include("fuzs.extensibleenums:extensibleenums-fabric:4.0.0")
     modApi "dev.architectury:architectury:${rootProject.architectury_version}"
 }
 
